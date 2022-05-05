@@ -9,7 +9,8 @@
     --bg: rgba(0, 0, 0, 0);
     --primary-blue: #319aba;
     --secondary-blue: #c9e3eb;
-    --gray: #b1a9a4;
+    --gray: #d6cec8;
+    --dark-gray: rgb(150, 143, 138);
 }
 
 body {
@@ -63,10 +64,10 @@ header::after {
     position: absolute;
     bottom: 7%;
     left: 7%;
-    width: 7rem;
+    width: 6rem;
     height: 2rem;
     display: flex;
-    border-radius: 5px;
+    border-radius: 15px;
     align-items: center;
     justify-content: space-around;
     border: none;
@@ -88,11 +89,11 @@ header::after {
     height: 100%;
     top: 0;
     left: 0;
-    background: var(--gray);
-    border-radius: 5px;
+    background-color: var(--gray);
+    border-radius: 15px;
     margin: 0;
     display: block;
-    transition: all 0.3s linear;
+    transition: all 0.5s linear;
 }
 
 .slide .switch {

@@ -1,6 +1,7 @@
 // Global Variables
 const video = document.querySelector(".video-container")
 const switchBtn = document.querySelector(".switch-btn")
+const switchSpan = document.querySelector(".switch")
 const loader = document.querySelector(".loader")
 const main = document.querySelector('.main')
 const header = document.querySelector('header')
@@ -31,8 +32,11 @@ function playPause() {
     if (!switchBtn.classList.contains('slide')) {
         switchBtn.classList.add('slide')
         video.pause()
+        switchSpan.style.backgroundColor = ('var(--dark-gray)')
     } else {
         switchBtn.classList.remove('slide')
+        switchSpan.style.backgroundColor = ('var(--gray)')
+
         video.play()
     }
 
